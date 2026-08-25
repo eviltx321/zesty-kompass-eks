@@ -1,0 +1,22 @@
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!terraform.tfvars.example
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# Saved plan files - these embed full state + resolved config, including secret values from
+# kompass_values_file (values.yaml). Never commit these.
+tfplan*
+*.tfplan
+
+# Local tooling artifacts, not part of the deliverable
+.claude/
+.claude-flow/

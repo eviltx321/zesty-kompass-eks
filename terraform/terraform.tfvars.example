@@ -1,0 +1,17 @@
+# Copy to terraform.tfvars and adjust as needed. terraform.tfvars is git-ignored - do not commit
+# real values here or in the plan/apply output.
+
+aws_region  = "eu-west-1"
+aws_profile = "695214758399_AdministratorAccess"
+
+cluster_name = "zesty-kompass"
+
+node_instance_type = "t3.large"
+node_desired_size   = 2
+node_min_size       = 1
+node_max_size       = 3
+
+tags = {
+  Owner       = "your-name"
+  Environment = "dev"
+}
